@@ -1,16 +1,17 @@
 import enum
 from typing import Callable, Dict, List
 
-NUM_CHARACTERS = 36
+NUM_CHARACTERS = 37
 
 
 class CharacterName(enum.Enum):
     ALISA = "alisa"
+    ANNA = "anna"
     ASUKA = "asuka"
     AZUCENA = "azucena"
     BRYAN = "bryan"
     CLAUDIO = "claudio"
-    Clive = "clive"
+    CLIVE = "clive"
     DEVIL_JIN = "devil_jin"
     DRAGUNOV = "dragunov"
     EDDY = "eddy"
@@ -51,13 +52,14 @@ class CharacterName(enum.Enum):
 
 CHARACTER_ALIAS: Dict[CharacterName, List[str]] = {
     CharacterName.ALISA: ["ali", "als"],
+    CharacterName.ANNA: ["ana", "an"],
     CharacterName.ASUKA: ["asu", "oscar"],
     CharacterName.AZUCENA: ["azu", "cafe"],
     CharacterName.BRYAN: ["bry", "byron"],
-    CharacterName.CLAUDIO: ["cld", "cla"],
-    CharacterName.Clive: ["cli", "clv"],
+    CharacterName.CLAUDIO: ["cld", "cla", "claud"],
+    CharacterName.CLIVE: ["cli", "clv"],
     CharacterName.DEVIL_JIN: ["dj", "deviljin", "dvj", "djin"],
-    CharacterName.DRAGUNOV: ["drag", "sergei", "dragu"],
+    CharacterName.DRAGUNOV: ["drag", "sergei", "dragu", "dra"],
     CharacterName.EDDY: ["ed", "capo"],
     CharacterName.FENG: ["fen"],
     CharacterName.HEIHACHI: ["hei", "hachi"],
@@ -67,7 +69,7 @@ CHARACTER_ALIAS: Dict[CharacterName, List[str]] = {
     CharacterName.JUN: [],
     CharacterName.KAZUYA: ["kaz", "kazze", "masku"],
     CharacterName.KING: ["kin"],
-    CharacterName.KUMA: ["karhu"],
+    CharacterName.KUMA: ["karhu", "bear"],
     CharacterName.LARS: ["lar"],
     CharacterName.LAW: ["marshall"],
     CharacterName.LEE: ["violet"],
